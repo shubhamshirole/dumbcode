@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yes or No Prompt</title>
+</head>
+<body>
+<h1>Are You Dumb ?</h1>
+	<button onclick="yes()">Yes</button>
+	<button id="myButton" onclick="no()">No</button>
+
+	<script>
+		function yes() {
+			alert("Yes I know");
+            location.reload();
+
+		}
+
+        function no() {
+			var myButton = document.getElementById("myButton");
+            let x = Math.floor((Math.random() * 100) + 1);
+  myButton.style.position = "absolute";
+  myButton.style.top = x + "px";
+  myButton.style.left = x + "px";
+
+		}
+
+	</script>
+
+</body>
+</html>
